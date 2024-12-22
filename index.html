@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avenue</title>
+    <link rel="stylesheet" href="static/style/style.css">
+</head>
+
+<body class="body">
+
+    <header class="header">
+        <nav class="nav-header">
+            <div class="div-header">
+
+                <a class="main-page-href" href="index.html">
+                    <div class="hat">
+                        <img src="static/images/header/christmas-hat.png" alt="">
+                    </div>
+                    <div class="header-logo">    
+                        <img src="static/images/header/logo.png" alt="Логотип сайта">
+                    </div>
+                </a>
+
+                <button class="header-button catalog-button" type="button">
+                            <div class="ctg-img btn-img">
+                                <img id="ctg-img" src="static/images/header/ctg-menu.png" alt="">
+                            </div>
+                            Каталог
+                </button>
+
+                <div class="search-bar">
+                    <div class="loupe-field">
+                        <label class="loupe-image" for="search-field">
+                            <div><img src="static/images/header/loupe.png" alt="Логотип сайта"></div>
+                        </label>
+                        <input class="search-field" id="search-field" type="text" height="3.0625em"
+                            placeholder="Поиск товаров">
+                    </div>
+                    <input class="input-button" type="button" value="Найти">
+                </div>
+
+                <button class="header-button pc-layout" type="button">
+                    <div class="btn-img">
+                        <img src="static/images/header/delivery.png" alt="">
+                    </div>
+                    Доставка
+                </button>
+                <a href="cart.html">
+                    <button class="header-button pc-layout" type="button">
+                        <div class="btn-img">
+                            <img src="static/images/header/cart.png" alt="">
+                        </div>
+                        Корзина
+                    </button>
+                </a>
+
+                <button class="header-profile">
+                    <svg width="3.125em" height="3.125em" viewBox="0.5 0.5 23 23" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" transform="rotate(0)">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(3.6,3.6), scale(0.7)" />
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#ff0000"
+                            stroke-width="0.144" />
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M12.12 12.78C12.05 12.77 11.96 12.77 11.88 12.78C10.12 12.72 8.71997 11.28 8.71997 9.50998C8.71997 7.69998 10.18 6.22998 12 6.22998C13.81 6.22998 15.28 7.69998 15.28 9.50998C15.27 11.28 13.88 12.72 12.12 12.78Z"
+                                stroke-width="0.09375em" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M18.74 19.3801C16.96 21.0101 14.6 22.0001 12 22.0001C9.40001 22.0001 7.04001 21.0101 5.26001 19.3801C5.36001 18.4401 5.96001 17.5201 7.03001 16.8001C9.77001 14.9801 14.25 14.9801 16.97 16.8001C18.04 17.5201 18.64 18.4401 18.74 19.3801Z"
+                                stroke-width="0.09375em" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                stroke-width="0.09375em" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="div-main">
+
+            <div class="slider">
+
+                <div class="slider-slides">
+                    <div class="slider-slide"><img src="static/images/slides/slide1.webp" alt="Рекламный баннер"></div>
+                    <div class="slider-slide"><img src="static/images/slides/slide2.webp" alt="Рекламный баннер"></div>
+                    <div class="slider-slide"><img src="static/images/slides/slide3.webp" alt="Рекламный баннер"></div>
+                    <div class="slider-slide"><img src="static/images/slides/slide4.webp" alt="Рекламный баннер"></div>
+                </div>
+
+                <div class="slider-switches">
+                    <button class="prev">
+                        <div class="arrow-image"><img src="static/images/index_main/left-arrow.svg" alt="стрелка влево">
+                        </div>
+                    </button>
+                    <button class="next">
+                        <div class="arrow-image"><img src="static/images/index_main/right-arrow.svg"
+                                alt="стрелка вправо"></div>
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="popular-products">
+
+                <div class="div-chapter">
+                    <span class="chapter">Популярные товары</span>
+                    <div class="div-view-all">
+                        <a href="" class="view-all">
+                            <span>Посмотреть всё</span>
+                            <svg width="1.375em" height="1.375em" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.82054 20.7313C8.21107 21.1218 8.84423 21.1218 9.23476 20.7313L15.8792 14.0868C17.0505 12.9155 17.0508 11.0167 15.88 9.84497L9.3097 3.26958C8.91918 2.87905 8.28601 2.87905 7.89549 3.26958C7.50497 3.6601 7.50497 4.29327 7.89549 4.68379L14.4675 11.2558C14.8581 11.6464 14.8581 12.2795 14.4675 12.67L7.82054 19.317C7.43002 19.7076 7.43002 20.3407 7.82054 20.7313Z"
+                                    fill="#004E81" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="products">
+
+                    <div class="product">
+                        <div class="product-image">
+                            <img src="static/images/products/Cheese-1.png" alt="">
+                        </div>
+                        <div class="product-text">
+                            <span class="product-price">549.99₽</span>
+                            <span class="product-description">Сыр радость вкуса Большой куш 20% 1 кг</span>
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <div class="product-image">
+                            <img src="static/images/products/Cheese-1.png" alt="">
+                        </div>
+                        <div class="product-text">
+                            <span class="product-price">549.99₽</span>
+                            <span class="product-description">Сыр радость вкуса Большой куш 20% 1 кг</span>
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <div class="product-image">
+                            <img src="static/images/products/Cheese-1.png" alt="">
+                        </div>
+                        <div class="product-text">
+                            <span class="product-price">549.99₽</span>
+                            <span class="product-description">Сыр радость вкуса Большой куш 20% 1 кг</span>
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <div class="product-image">
+                            <img src="static/images/products/Cheese-1.png" alt="">
+                        </div>
+                        <div class="product-text">
+                            <span class="product-price">549.99₽</span>
+                            <span class="product-description">Сыр радость вкуса Большой куш 20% 1 кг</span>
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <div class="product-image">
+                            <img src="static/images/products/Cheese-1.png" alt="">
+                        </div>
+                        <div class="product-text">
+                            <span class="product-price">549.99₽</span>
+                            <span class="product-description">Сыр радость вкуса Большой куш 20% 1 кг</span>
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <div class="product-image">
+                            <img src="static/images/products/Cheese-1.png" alt="">
+                        </div>
+                        <div class="product-text">
+                            <span class="product-price">549.99₽</span>
+                            <span class="product-description">Сыр радость вкуса Большой куш 20% 1 кг</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            
+            <div class="discounts-and-promotions">
+
+                <div class="div-chapter">
+                    <span class="chapter">Скидки и акции</span>
+                    <div class="div-view-all">
+                        <a href="" class="view-all">
+                            <span>Посмотреть всё</span>
+                            <svg width="1.375em" height="1.375em" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.82054 20.7313C8.21107 21.1218 8.84423 21.1218 9.23476 20.7313L15.8792 14.0868C17.0505 12.9155 17.0508 11.0167 15.88 9.84497L9.3097 3.26958C8.91918 2.87905 8.28601 2.87905 7.89549 3.26958C7.50497 3.6601 7.50497 4.29327 7.89549 4.68379L14.4675 11.2558C14.8581 11.6464 14.8581 12.2795 14.4675 12.67L7.82054 19.317C7.43002 19.7076 7.43002 20.3407 7.82054 20.7313Z"
+                                    fill="#004E81" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="offers">
+                    <div class="offer">
+                        <img src="static/images/slides/slide1.webp" alt="Рекламный баннер">
+                    </div>
+                    <div class="offer">
+                        <img src="static/images/slides/slide2.webp" alt="Рекламный баннер">
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="app-ad">
+
+                <div class="phone-img">
+                    <img src="static/images/index_main/phone.png" alt="">
+                </div>
+
+                <div class="ad-text"> 
+                    <h2 class="ad-chapter">Попробуйте наше приложение</h2>
+                    <ul class="ad-list">
+                        <li>Акции и скидки</li>
+                        <li>Больше бонусов за покупки</li>
+                        <li>Доставка и самовывоз</li>
+                        <li>Сканер цен</li>
+                        <li>Оплата через СБП</li>
+                    </ul>
+
+                    <div class="install-apps">
+                        <button class="google-play">
+                            <svg width="30px" height="30px" viewBox="0 0 32.00 32.00" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" stroke="#000000" stroke-width="0.00032">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke="#CCCCCC" stroke-width="0.192" />
+                                <g id="SVGRepo_iconCarrier">
+                                    <mask id="mask0_87_8320" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="7"
+                                        y="3" width="24" height="26">
+                                        <path
+                                            d="M30.0484 14.4004C31.3172 15.0986 31.3172 16.9014 30.0484 17.5996L9.75627 28.7659C8.52052 29.4459 7 28.5634 7 27.1663L7 4.83374C7 3.43657 8.52052 2.55415 9.75627 3.23415L30.0484 14.4004Z"
+                                            fill="#C4C4C4" />
+                                    </mask>
+                                    <g mask="url(#mask0_87_8320)">
+                                        <path
+                                            d="M7.63473 28.5466L20.2923 15.8179L7.84319 3.29883C7.34653 3.61721 7 4.1669 7 4.8339V27.1664C7 27.7355 7.25223 28.2191 7.63473 28.5466Z"
+                                            fill="url(#paint0_linear_87_8320)" />
+                                        <path
+                                            d="M30.048 14.4003C31.3169 15.0985 31.3169 16.9012 30.048 17.5994L24.9287 20.4165L20.292 15.8175L24.6923 11.4531L30.048 14.4003Z"
+                                            fill="url(#paint1_linear_87_8320)" />
+                                        <path
+                                            d="M24.9292 20.4168L20.2924 15.8179L7.63477 28.5466C8.19139 29.0232 9.02389 29.1691 9.75635 28.766L24.9292 20.4168Z"
+                                            fill="url(#paint2_linear_87_8320)" />
+                                        <path
+                                            d="M7.84277 3.29865L20.2919 15.8177L24.6922 11.4533L9.75583 3.23415C9.11003 2.87878 8.38646 2.95013 7.84277 3.29865Z"
+                                            fill="url(#paint3_linear_87_8320)" />
+                                    </g>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_87_8320" x1="15.6769" y1="10.874" x2="7.07106"
+                                            y2="19.5506" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#00C3FF" />
+                                            <stop offset="1" stop-color="#1BE2FA" />
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_87_8320" x1="20.292" y1="15.8176" x2="31.7381"
+                                            y2="15.8176" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#FFCE00" />
+                                            <stop offset="1" stop-color="#FFEA00" />
+                                        </linearGradient>
+                                        <linearGradient id="paint2_linear_87_8320" x1="7.36932" y1="30.1004" x2="22.595"
+                                            y2="17.8937" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#DE2453" />
+                                            <stop offset="1" stop-color="#FE3944" />
+                                        </linearGradient>
+                                        <linearGradient id="paint3_linear_87_8320" x1="8.10725" y1="1.90137"
+                                            x2="22.5971" y2="13.7365" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#11D574" />
+                                            <stop offset="1" stop-color="#01F176" />
+                                        </linearGradient>
+                                    </defs>
+                                </g>
+                            </svg>
+                            <span class="install-text">Google Play</span>
+                        </button>
+                        <button class="app-store">
+                            <svg fill="white" width="30px" height="30px" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17.564 13.862c-.413.916-.612 1.325-1.144 2.135-.742 1.13-1.79 2.538-3.087 2.55-1.152.01-1.448-.75-3.013-.741-1.564.008-1.89.755-3.043.744-1.297-.012-2.29-1.283-3.033-2.414-2.077-3.16-2.294-6.87-1.013-8.843.91-1.401 2.347-2.221 3.697-2.221 1.375 0 2.24.754 3.376.754 1.103 0 1.775-.756 3.365-.756 1.2 0 2.474.655 3.381 1.785-2.972 1.629-2.49 5.873.514 7.007zM12.463 3.808c.577-.742 1.016-1.788.857-2.858-.944.065-2.047.665-2.692 1.448-.584.71-1.067 1.763-.88 2.787 1.03.031 2.096-.584 2.715-1.377z" />
+                            </svg>
+                            <span class="install-text">App Store</span>
+                        </button>
+                        <button class="appgallery">
+                            <svg width="30px" height="30px" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 166.5 166.5">
+                                <defs>
+                                    <linearGradient id="a" x1="136.03" y1="636.28" x2="136.03" y2="631.66"
+                                        gradientTransform="matrix(36, 0, 0, -36, -4513, 23207)"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop offset="0" stop-color="#fb6361" />
+                                        <stop offset="1" stop-color="#ed3e45" />
+                                    </linearGradient>
+                                </defs>
+                                <title>HUAWEI AppGallery logo - Brandlogos.net</title>
+                                <path
+                                    d="M347.47,300.75c-34.21,0-46.72,12.51-46.72,46.71v73.08c0,34.2,12.51,46.71,46.72,46.71h73c34.21,0,46.74-12.51,46.74-46.71V347.46c0-34.2-12.51-46.71-46.72-46.71Z"
+                                    transform="translate(-300.75 -300.75)" style="fill:url(#a)" />
+                                <path
+                                    d="M373.38,397.32h6.68l-3.35-7.8Zm-1.65,3.93-2,4.54h-4.52l9.6-21.78h3.9l9.56,21.78h-4.64l-2-4.54Zm72.66,4.52h4.36V384h-4.36ZM427,396.42h8v-4h-8V388h11.68v-4h-16v21.77h16.46v-4H427ZM409.68,399l-4.95-15h-3.61l-4.95,15-4.81-15h-4.71l7.6,21.78h3.66l5-14.31,5,14.31h3.69L419.09,384H414.5Zm-51.11-2.51c0,3.54-1.76,5.44-5,5.44s-5-1.95-5-5.59V384h-4.42v12.46c0,6.13,3.41,9.65,9.34,9.65s9.43-3.58,9.43-9.83V384h-4.42ZM333.66,384h4.42v21.8h-4.42v-8.85h-10v8.85h-4.42V384h4.42v8.79h10Z"
+                                    transform="translate(-300.75 -300.75)" style="fill:#fff" />
+                                <path
+                                    d="M384,356.25a27.78,27.78,0,0,1-27.75-27.75h3.92a23.83,23.83,0,0,0,47.66,0h3.92A27.78,27.78,0,0,1,384,356.25"
+                                    transform="translate(-300.75 -300.75)" style="fill:#fff" />
+                            </svg>
+                            <span class="install-text">AppGallery</span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="div-footer">
+            <div class="upper-footer">
+                <div class="footer-chapter">
+                    <span class="footer-title">Правовая информация</span>
+                    <ul class="footer-list">
+                        <li><a class="footer-link" href="">О компани</a></li>
+                        <li><a class="footer-link" href="">Политика конфиденциальности</a></li>
+                        <li><a class="footer-link" href="">Условия использования файлов cookie</a></li>
+                    </ul>
+                </div>
+                <div class="footer-chapter">
+                    <span class="footer-title">Служба поддержки</span>
+                    <ul class="footer-list">
+                        <li class="hotline-number">8 800 000-00-00</li>
+                        <li class="subscript-description">Горячая линия</li>
+                    </ul>
+                </div>
+                <div class="footer-chapter Avenue-app">
+                    <span class="footer-title">Приложение Avenue</span>
+                    <div class="qr-code"><img src="static/images/footer/qr-code.png" alt=""></div>
+                    <span class="subscript-description download-subscript">Скачайте, отсканировав QR-code</span>
+                    <div class="stores-buttons">
+                        <button>
+                            <svg width="30px" height="30px" viewBox="0 0 32.00 32.00" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" stroke="#000000" stroke-width="0.00032">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke="#CCCCCC" stroke-width="0.192" />
+                                <g id="SVGRepo_iconCarrier">
+                                    <mask id="mask0_87_8320" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="7"
+                                        y="3" width="24" height="26">
+                                        <path
+                                            d="M30.0484 14.4004C31.3172 15.0986 31.3172 16.9014 30.0484 17.5996L9.75627 28.7659C8.52052 29.4459 7 28.5634 7 27.1663L7 4.83374C7 3.43657 8.52052 2.55415 9.75627 3.23415L30.0484 14.4004Z"
+                                            fill="#C4C4C4" />
+                                    </mask>
+                                    <g mask="url(#mask0_87_8320)">
+                                        <path
+                                            d="M7.63473 28.5466L20.2923 15.8179L7.84319 3.29883C7.34653 3.61721 7 4.1669 7 4.8339V27.1664C7 27.7355 7.25223 28.2191 7.63473 28.5466Z"
+                                            fill="url(#paint0_linear_87_8320)" />
+                                        <path
+                                            d="M30.048 14.4003C31.3169 15.0985 31.3169 16.9012 30.048 17.5994L24.9287 20.4165L20.292 15.8175L24.6923 11.4531L30.048 14.4003Z"
+                                            fill="url(#paint1_linear_87_8320)" />
+                                        <path
+                                            d="M24.9292 20.4168L20.2924 15.8179L7.63477 28.5466C8.19139 29.0232 9.02389 29.1691 9.75635 28.766L24.9292 20.4168Z"
+                                            fill="url(#paint2_linear_87_8320)" />
+                                        <path
+                                            d="M7.84277 3.29865L20.2919 15.8177L24.6922 11.4533L9.75583 3.23415C9.11003 2.87878 8.38646 2.95013 7.84277 3.29865Z"
+                                            fill="url(#paint3_linear_87_8320)" />
+                                    </g>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_87_8320" x1="15.6769" y1="10.874" x2="7.07106"
+                                            y2="19.5506" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#00C3FF" />
+                                            <stop offset="1" stop-color="#1BE2FA" />
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_87_8320" x1="20.292" y1="15.8176" x2="31.7381"
+                                            y2="15.8176" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#FFCE00" />
+                                            <stop offset="1" stop-color="#FFEA00" />
+                                        </linearGradient>
+                                        <linearGradient id="paint2_linear_87_8320" x1="7.36932" y1="30.1004" x2="22.595"
+                                            y2="17.8937" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#DE2453" />
+                                            <stop offset="1" stop-color="#FE3944" />
+                                        </linearGradient>
+                                        <linearGradient id="paint3_linear_87_8320" x1="8.10725" y1="1.90137"
+                                            x2="22.5971" y2="13.7365" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#11D574" />
+                                            <stop offset="1" stop-color="#01F176" />
+                                        </linearGradient>
+                                    </defs>
+                                </g>
+                            </svg>
+                        </button>
+                        <button>
+                            <svg fill="white" width="30px" height="30px" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17.564 13.862c-.413.916-.612 1.325-1.144 2.135-.742 1.13-1.79 2.538-3.087 2.55-1.152.01-1.448-.75-3.013-.741-1.564.008-1.89.755-3.043.744-1.297-.012-2.29-1.283-3.033-2.414-2.077-3.16-2.294-6.87-1.013-8.843.91-1.401 2.347-2.221 3.697-2.221 1.375 0 2.24.754 3.376.754 1.103 0 1.775-.756 3.365-.756 1.2 0 2.474.655 3.381 1.785-2.972 1.629-2.49 5.873.514 7.007zM12.463 3.808c.577-.742 1.016-1.788.857-2.858-.944.065-2.047.665-2.692 1.448-.584.71-1.067 1.763-.88 2.787 1.03.031 2.096-.584 2.715-1.377z" />
+                            </svg>
+                        </button>
+                        <button>
+                            <svg width="30px" height="30px" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 166.5 166.5">
+                                <defs>
+                                    <linearGradient id="a" x1="136.03" y1="636.28" x2="136.03" y2="631.66"
+                                        gradientTransform="matrix(36, 0, 0, -36, -4513, 23207)"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop offset="0" stop-color="#fb6361" />
+                                        <stop offset="1" stop-color="#ed3e45" />
+                                    </linearGradient>
+                                </defs>
+                                <title>HUAWEI AppGallery logo - Brandlogos.net</title>
+                                <path
+                                    d="M347.47,300.75c-34.21,0-46.72,12.51-46.72,46.71v73.08c0,34.2,12.51,46.71,46.72,46.71h73c34.21,0,46.74-12.51,46.74-46.71V347.46c0-34.2-12.51-46.71-46.72-46.71Z"
+                                    transform="translate(-300.75 -300.75)" style="fill:url(#a)" />
+                                <path
+                                    d="M373.38,397.32h6.68l-3.35-7.8Zm-1.65,3.93-2,4.54h-4.52l9.6-21.78h3.9l9.56,21.78h-4.64l-2-4.54Zm72.66,4.52h4.36V384h-4.36ZM427,396.42h8v-4h-8V388h11.68v-4h-16v21.77h16.46v-4H427ZM409.68,399l-4.95-15h-3.61l-4.95,15-4.81-15h-4.71l7.6,21.78h3.66l5-14.31,5,14.31h3.69L419.09,384H414.5Zm-51.11-2.51c0,3.54-1.76,5.44-5,5.44s-5-1.95-5-5.59V384h-4.42v12.46c0,6.13,3.41,9.65,9.34,9.65s9.43-3.58,9.43-9.83V384h-4.42ZM333.66,384h4.42v21.8h-4.42v-8.85h-10v8.85h-4.42V384h4.42v8.79h10Z"
+                                    transform="translate(-300.75 -300.75)" style="fill:#fff" />
+                                <path
+                                    d="M384,356.25a27.78,27.78,0,0,1-27.75-27.75h3.92a23.83,23.83,0,0,0,47.66,0h3.92A27.78,27.78,0,0,1,384,356.25"
+                                    transform="translate(-300.75 -300.75)" style="fill:#fff" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lower-footer">
+                <div class="official-store">
+                    <span class="subscript-description">© Официальный сайт «Avenue». 2024-2025</span>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Модальные окна -->
+
+    <div class="modal-catalog modal-catalog-off">
+        <div class="modal-categories">
+            <div class="categories">
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-authorization-off modal-authorization">
+
+        <div class="log-in-active modal-log">
+            <div class="log-title">
+                <span>Вход</span>
+                <div class="vertical-line"></div>
+                <span style="color: rgb(141, 141, 141);">Регистрация</span>
+            </div>
+
+            <div class="log-fields">
+                <input class="log-field" type="text" placeholder="Логин">
+                <input class="log-field password-field" type="password" placeholder="Пароль">
+                <input class="log-button modal-submit" type="submit" value="Войти">
+                <button class="log-button modal-switch log-up-switch">Зарегистрироваться</button>
+            </div>
+
+        </div>
+
+        <div class="log-up modal-log">
+
+            <div class="log-title">
+                <span style="color: rgb(141, 141, 141);">Вход</span>
+                <div class="vertical-line"></div>
+                <span>Регистрация</span>
+            </div>
+
+            <div class="log-fields">
+                <input class="log-field" type="text" placeholder="Логин">
+                <input class="log-field password-field" type="password" placeholder="Пароль">
+                <input class="log-field password-field" type="password" placeholder="Повторите пароль">
+                <input class="log-button modal-submit" type="submit" value="Зарегистрироваться">
+                <button class="log-button modal-switch log-in-switch">Войти</button>
+            </div>
+
+        </div>
+
+        <button class="modal-close">
+            <div class="cross-image">
+                <img src="static/images/modal_profile/cross.svg" alt="">
+            </div>
+        </button>
+
+    </div>
+
+</body>
+<script src="js/modalProfile.js"></script>
+<script class="slider" src="js/slider.js"></script>
+<script src="js/modalCatalog.js"></script>
+<script src="js/catalogRender.js"></script>
+
+</html>

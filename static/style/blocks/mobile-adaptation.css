@@ -1,0 +1,457 @@
+@media screen and (max-width: 720px) {
+
+    header {
+        width: 100vw;
+        position: relative;
+    }
+
+    .nav-header {
+        width: 100vw;
+        padding: 2.5vw 0px 2vw;
+    }
+
+    /* The header block */
+    .div-header {
+        width: 100vw;
+        /* display: flex; */
+        flex-wrap: wrap;
+        gap: 6vw;
+        padding-bottom: 10vw;
+    }
+
+    .hat img {
+        width: 5.5vw;
+        top: -1.3vw;
+    }
+
+    .header-logo img {
+        /* Website logo */
+        height: 7.5vw;
+    }
+
+    .header-button {
+        width: 7.5vw;
+        height: 7.5vw;
+        border-radius: 100%;
+        font-size: 0;
+        gap: 0;
+        padding: 0;
+        border-width: 0.313vw;
+    }
+
+    /* Header: search-bar */
+    .search-bar {
+        width: 93.125vw;
+        height: 7.5vw;
+        position: absolute;
+        bottom: 1.4vw;
+        border-width: 0.5vw;
+        border-radius: 10vw;
+    }
+
+
+    .loupe-image img {
+        margin-top: 0.5vw;
+        height: 3vw;
+        width: 2..8vw;
+        /* width: 3vw; */
+    }
+
+    .search-field {
+        font-size: 3.125vw;
+        width: 81.5vw;
+    }
+
+    .input-button {
+        display: none;
+    }
+
+    .header-profile svg {
+        width: 7.5vw;
+        height: 7.5vw;
+        stroke: white;
+        background-color: rgba(0, 78, 129, 1);
+        border-radius: 100%;
+        border-width: 0;
+    }
+
+    .btn-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-img img {
+        height: 4.375vw;
+        /* padding-right: 108px; */
+    }
+
+    main {
+        width: 100vw;
+        padding: 6vw 0;
+    }
+
+    .div-main {
+        width: 100vw;
+        /* justify-content: center; */
+        align-content: center;
+        row-gap: 5vw;
+    }
+
+    /* Слайдер с рекламой */
+    .slider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+    }
+
+    .slider-slides {
+        display: flex;
+        gap: 10vw;
+        height: 50.625vw;
+        width: 90vw;
+        transition: transform 0.5s;
+        /* overflow: hidden; */
+
+    }
+
+    .slider-slide img {
+        width: 90vw;
+        height: auto;
+        border-radius: 5vw;
+    }
+
+    .slider-switches {
+        gap: 83vw;
+    }
+
+    .slider-switches button {
+        width: 6vw;
+        height: 6vw;
+    }
+
+    .arrow-image img {
+        height: 5vw;
+    }
+
+    /* Заголовок разделов на сайте */
+    .div-chapter {
+        width: 90vw;
+        padding: 0 3vw;
+    }
+
+    .chapter {
+        font-size: 4vw;
+    }
+
+    .view-all {
+        font-size: 3vw;
+    }
+
+    /* Блок "популярные товары" */
+    .popular-products {
+        row-gap: 2vw;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .products::-webkit-scrollbar {
+        visibility: hidden;
+    }
+
+    .products {
+        width: 90vw;
+        overflow-x: scroll;
+        scrollbar-width: none;
+    }
+
+    .product {
+        width: 30vw;
+        /* height: 55vw; */
+        border-radius: 8vw;
+        padding: 4vw 4vw;
+        margin: 1vw ;
+    }
+
+    .product-image img {
+        width: 30vw;
+        height: auto;
+        border-radius: 5vw;
+    }
+
+    .product-price {
+        font-size: 5vw;
+    }
+
+    .product-description {
+        font-size: 3vw;
+    }
+
+    /* Блок: Скидки и акции */
+    .discounts-and-promotions {
+        align-items: center;
+        row-gap: 3vw;
+        width: 100vw;
+    }
+
+    .offers {
+        width: 90vw;
+        height: auto;
+        overflow-x: scroll;
+        gap: 10vw;
+        padding-bottom: 0;
+        scrollbar-width: none;
+    }
+    
+    .offer {
+        display: flex;
+    }
+
+    .offer img {
+        width: 90vw;
+        height: auto;
+        border-radius: 5vw;
+    }
+
+    /* Блок с рекламой приложения */
+    .app-ad {
+        width: 90vw;
+        height: 45vw;
+        border-radius: 5vw;
+        gap: 5vw;
+    }
+
+    /* Картинка телефона */
+    .phone-img {
+        margin-left: 3vw;
+    }
+
+    .phone-img img {
+        width: 28vw;
+        height: auto;
+    }
+
+    /* Текст с рекламой */
+    .ad-text {
+        row-gap: 2vw;
+    }
+
+    .ad-chapter {
+        font-size: 3.2vw;
+    }
+
+    .ad-list {
+        font-size: 2.5vw;
+        row-gap: 1vw;
+        padding-left: 4.2vw;
+    }
+
+    .install-apps {
+        gap: 1vw;
+    }
+
+    .install-apps button {
+        padding: 1vw;
+        border-radius: 1vw;
+    }
+    .install-apps button svg {
+        width: 3vw;
+        height: 3vw;
+    }
+
+    .install-text {
+        font-size: 1.5vw;
+        margin-left: 1vw;
+    }
+
+    footer {
+        width: 100vw;
+        padding-top: 5vw;
+    }
+
+    .div-footer {
+        width: 100vw;
+        align-items: flex-start;
+    }
+
+    .upper-footer {
+        width: auto;
+        flex-direction: column;
+        row-gap: 3.5vw;
+        margin-left: 7vw;
+    }
+
+    .footer-chapter,
+    .footer-list {
+        row-gap: 1vw;
+    }
+
+    .footer-title {
+        font-size: 4vw;
+
+    }
+
+    .footer-list {
+        font-size: 3vw;
+
+    }
+
+    .footer-link {
+        font-size: 3vw;
+    }
+
+    .subscript-description {
+        font-size: 2vw;
+    }
+
+    .qr-code {
+        display: none;
+    }
+
+    /* .qr-code img {
+        width: 15vw;
+        height: auto;
+    } */
+    
+    .download-subscript {
+        display: none;
+    }
+
+    .stores-buttons {
+        gap: 3.5vw;
+    }
+
+    .stores-buttons button {
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .lower-footer {
+        margin-top: 2vw;
+    }
+
+    .official-store {
+        padding: 2vw 7vw;
+        display: flex;
+        align-items: center;
+    }
+
+    /* Мобильная адаптация модалок */
+    
+    /* Модальное окно входа */
+    .log-in-active, .log-up-active {
+        width: 67vw;
+        height: 70vw;
+        margin-top: 25vw;
+        border-radius: 4vw;
+        row-gap: 5vw;
+    }
+    
+    .log-title {
+        gap: 5vw;
+        font-size: 4vw;
+        top: 3.5vw;
+    }
+    
+    .vertical-line { /* Разделяющая "Вход" и "Регистрация" линия */
+        height: 5vw;
+        width: 0.15vw;
+    }
+    
+    .log-fields {
+        row-gap: 3.5vw;
+    }
+    
+    .log-field {
+        height: 7vw;
+        width: 56vw;
+        margin: 0;
+        font-size: 2.8vw;
+        padding: 0 0 0 1.4vw;
+        border-radius: 3.5vw;
+        border-width: 0.5vw;
+    }
+
+    .log-field:focus {
+        outline: 0;
+
+    }
+    
+    .log-button {
+        height: 7.6vw;
+        width: 56.25vw;
+        margin: 0;
+        font-size: 2.8vw;
+        padding: 0;
+        border-radius: 3.5vw;
+        border-width: 0.5vw;
+    }
+
+    .log-up-active {
+        height: 80.5vw;
+    }
+    
+    .modal-close {
+        margin-left: 76.4vw;
+        margin-top: 25vw;
+        width: 4.6vw;
+        height: 4.6vw;
+        padding: 0;
+    }
+    
+    .cross-image {
+        width: 50%;
+        height: 50%;
+    }
+
+
+    /* Модальное окно каталога */
+    .modal-categories {
+        height: 96%;
+        width: 100%;
+        padding-top: 23vw;
+    }
+    
+    .categories {
+        width: 100%;
+        height: 86%;
+    }
+    
+    .categories::-webkit-scrollbar {
+        width: 1.4vw;
+    }
+     
+    .category {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2.8vw;
+        padding: 2vw 1.4vw;
+        border-radius: 1.4vw;
+    }
+    
+    .category-img-txt {
+        gap: 1.4vw;
+    }
+    
+    .category-img-txt span {
+        font-size: 3.4vw;
+    }
+    
+    .category-img {
+        height: 8.333vw;
+        width: 8.333vw;
+        border-radius: 1.4vw;
+    }
+    
+    .category-img img {
+        height: 6.25vw;
+    }
+
+    .category svg {
+        width: 3vw;
+        height: 3vw;
+    }
+}

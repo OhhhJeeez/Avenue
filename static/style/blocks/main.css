@@ -1,0 +1,341 @@
+main {
+    display: flex;
+    justify-content: center;
+    min-height: 100%;
+    background-image: url('../../images/index_main/background.png');
+    background-size: 25vw;
+    background-repeat: repeat;
+    padding: 2vw 0;
+}
+
+.div-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+    width: 1004;
+}
+
+/* Слайдер с рекламой */
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.slider-slides {
+    display: flex;
+    gap: 32px;
+    height: 288px;
+    width: 1004px;
+    transition: transform 0.5s;
+}
+
+.slider-slide img {
+    width: 486px;
+    height: 288px;
+    border-radius: 30px;
+
+}
+
+.slider-switches {
+    position: absolute;
+    display: flex;
+    gap: 965px;
+}
+
+.slider-switches button {
+    width: 33px;
+    height: 33px;
+    border-radius: 100%;
+    border-style: none;
+    box-shadow: 0px 0px 4px 0.5px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.slider-switches button:hover {
+    cursor: pointer;
+    background-color: rgb(221, 221, 221);
+}
+
+.arrow-image {
+    display: flex;
+}
+
+.arrow-image img {
+    height: 30px;
+}
+
+
+/* Заголовок разделов на сайте */
+.div-chapter {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    align-items:baseline;
+}
+
+.chapter {
+    font-family: 'Inter-Medium';
+}
+
+.view-all {  /* Кнопка "Посмтреть всё" в заголовке */
+    color: black;
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: rgba(0, 78, 129, 1);
+}
+
+.view-all:hover {
+    color: rgb(0, 109, 182);
+}
+
+/* Блок "популярные товары" */
+.popular-products {
+    width: 1004px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.products {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product {
+    width: 134px;
+    /* height: 208px; */
+    border-radius: 30px;
+    padding: 15px 15px;
+}
+
+.product:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 4px 0.5px rgba(0, 0, 0, 0.25);
+}
+
+.product-image img {
+    height: 134px;
+    border-radius: 30px;
+    background-color: rgb(248, 248, 248);
+}
+
+.product-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-price {
+    font-size: 20px;
+    font-family: 'Inter-Medium';
+}
+
+.product-description {
+    font-size: 14px;
+    word-wrap: break-word;
+}
+
+
+/* Блок: Скидки и акции */
+.discounts-and-promotions {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 1004px;
+}
+
+.offers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offer img{
+    width: 486px;
+    height: 288px;
+    border-radius: 30px;
+}
+
+/* Блок с рекламой приложения */
+.app-ad {
+    display: flex;
+    align-items: end;
+    background: rgb(46,149,207);
+    background: linear-gradient(47deg, rgba(46,149,207,1) 19%, rgba(15,97,147,1) 41%, rgba(0,79,129,1) 69%);
+    height: 460px;
+    width: 1004px;
+    border-radius: 30px;
+    gap: 50px
+}
+
+/* Картинка телефона */
+.phone-img {
+    display: flex;
+    margin-left: 80px;
+}
+
+.phone-img img {
+    height: 430px;   
+}
+
+/* Текст с рекламой */
+.ad-text {
+    color: white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    
+    flex-direction: column;
+    row-gap: 30px;
+
+}
+
+.ad-chapter {
+    font-size: 32px;
+    margin: 0;
+}
+
+.ad-list {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    row-gap: 20px;
+    margin: 0;
+    padding-left: 22px;
+    font-size: 24px;
+}
+
+.install-apps {
+    display: flex;
+    gap: 10px;
+}
+
+.install-apps button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.install-apps button:hover {
+    background-color: rgb(45, 45, 45);
+    cursor: pointer;
+}
+
+.install-text {
+    color: white;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+
+
+/* ! Category Page ! */
+.div-main-category {
+    height: 100%;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.aside {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgb(182, 182, 182);
+    margin-right: 30px;
+}
+
+.category-products {
+    display: flex;
+    width: 50%;
+    height: 10%;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+/* ! Product Page ! */
+.selected-product {
+    display: flex;
+    gap: 2vw;
+}
+
+.product-main-images {
+    display: flex;
+    gap: 1vw;
+}
+
+.img-switches {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5vw;
+}
+
+.img-switch {
+    border: 0.1vh solid rgb(182, 182, 182);
+    border-radius: 2.5vh;
+    background-color: rgb(248, 248, 248);
+}
+
+.img-switch img {
+    height: 10vh;
+}
+
+.product-main-img {
+    background-color: rgb(248, 248, 248);
+    width: 40vh;
+    height: 30vh;
+    border: 0.1vh solid rgb(182, 182, 182);
+    border-radius: 2.5vh;
+    display: flex;
+    justify-content: center;
+}
+
+.product-main-img img{
+    height: 30vh;
+}
+
+.description-price-cart {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+    align-items: start;
+    width: 25vh;
+}
+
+.description {
+    font-size: 24px;
+}
+
+.price {
+    font-size: 24px;
+    font-family: 'Inter-SemiBold';
+}
+
+.add-to-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    /* height: 44px; */
+    border-radius: 21px;
+    border-width: 3px;
+    border-style: none;
+    background-color: rgba(0, 78, 129, 1);
+    color: white;
+}
+

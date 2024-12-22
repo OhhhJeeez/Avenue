@@ -1,0 +1,128 @@
+.modal-authorization-off {
+    /* display: none; */
+    opacity: 0;
+    visibility: hidden;
+} 
+
+.modal-authorization {
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.658);
+    display: flex;
+    justify-content: center;
+    z-index: 11;
+    transition: all 0.2s ease 0s;
+}
+
+/* Модальное окно входа */
+.log-in-active, .log-up-active {
+    background-color: white;
+    width: 485px;
+    height: 500px;
+    margin-top: 150px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 35px;
+    position: fixed;
+}
+
+.log-title {
+    display: flex;
+    gap: 35px;
+    font-size: 32px;
+    position: absolute;
+    top: 25px;
+}
+
+.vertical-line { /* Разделяющая "Вход" и "Регистрация" линия */
+    height: 37px;
+    width: 1px;
+    background-color: black;
+}
+
+.log-fields {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.log-field {
+    height: 55px;
+    width: 405px;
+    margin: 0;
+    font-size: 20px;
+    box-sizing: border-box;
+    padding: 0 0 0 10px;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: rgba(0, 78, 129, 1);
+}
+
+.log-button {
+    height: 55px;
+    width: 405px;
+    margin: 0;
+    font-size: 20px;
+    padding: 0;
+    border-radius: 25px;
+}
+
+.log-button:hover {
+    cursor: pointer;
+}
+
+.modal-submit {
+    background-color: rgba(0, 78, 129, 1);
+    color: white;
+    border: none;
+}
+
+.modal-switch {
+    border-style: solid;
+    border-color: rgba(0, 78, 129, 1);
+    background-color: white;
+    color: rgba(0, 78, 129, 1);
+}
+
+/* Модальное окно регистрации */
+.log-up-active {
+    height: 580px;
+}
+
+/* Кнопка закрытия модального окна */
+.modal-close {
+    margin-left: 550px;
+    margin-top: 150px;
+    width: 33px;
+    height: 33px;
+    border-radius: 100%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.modal-close:hover {
+    cursor: pointer;
+}
+
+.cross-image {
+    /* position: absolute; */
+    display: inline-flex;
+    width: 15px;
+    height: 15px;
+}
+
+/*  */
+.log-in {
+    display: none;
+}
+
+.log-up {
+    display: none;
+}

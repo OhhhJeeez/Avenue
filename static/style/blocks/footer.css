@@ -1,0 +1,112 @@
+footer {
+    width: 100%;
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid;
+    border-color: rgb(172, 172, 172);
+    box-shadow: 0px -1px 2px 0px rgba(0, 0, 0, 0.171);
+    background-color: white;
+}
+
+.div-footer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upper-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 1004px;
+}
+
+.footer-chapter, .footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 10px;
+}
+
+.footer-title {
+    font-family: 'Inter-Medium';
+    font-size: 20px;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-list li a {
+    color: rgba(0, 78, 129, 1);
+}
+
+.footer-link {
+    font-size: 16px;
+}
+
+.footer-link:hover {
+    color: rgb(0, 109, 182);
+    cursor: pointer;
+}
+
+.hotline-number {
+    font-family: 'Inter-medium';
+}
+
+.subscript-description {
+    color: rgb(172, 172, 172);
+    font-size: 14px;
+}
+
+.qr-code {
+    display: flex;
+    border: 0.5px solid rgb(172, 172, 172);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.qr-code img {
+    height: 80px;
+}
+
+.Avenue-app {
+    display: flex;
+    align-items: flex-start;
+}
+
+.stores-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.stores-buttons button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+}
+
+.stores-buttons button:hover {
+    cursor: pointer;
+}
+
+.lower-footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    border-top: 0.5px solid rgb(193, 193, 193);
+    margin-top: 20px;
+}
+
+.official-store { 
+    width: 1004px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
